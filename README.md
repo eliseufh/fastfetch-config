@@ -1,2 +1,1 @@
 # my fastfetch basic config
-
