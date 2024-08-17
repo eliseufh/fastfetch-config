@@ -1,3 +1,4 @@
 # fastfetch config
 
-![fastfetchterminal](https://github.com/user-attachments/assets/90ec1218-e8b0-4d7e-8cc4-dd623680e5c8)
+
+![terminal](https://github.com/user-attachments/assets/3ab8b6cd-7a66-4648-9f0e-3d55919a65b0)
