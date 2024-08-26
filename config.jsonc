@@ -10,124 +10,97 @@
     },
     "modules": [
         {
-            "type": "custom",
-            "format": "\u001b[34m  󰊠  コンピューター",
-            "keyColor": "magenta"
+            "type": "custom", // HardwareStart
+            "format": "┌───────────────── \u001b[1mHardware Information ───────────────────┐", // `\u001b` is `\033`, or `\e`
+            "outputColor": "red"
+        },
+        {
+            "type": "host",
+            "key": "  󰌢",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "cpu",
+            "key": "  ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "gpu",
+            "detectionMethod": "pci",
+            "key": "  ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "display",
+            "key": "  󱄄",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "memory",
+            "key": "  ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "disk",
+            "key": "  ",
+            "keyColor": "yellow"
         },
         {
             "type": "custom",
-            "format": "┌──────────────────────────────────────────┐"
+            "format": "└──────────────────────────────────────────────────────────┘"
+        },
+        {
+            "type": "custom", // SoftwareStart
+            "format": "┌───────────────── \u001b[1mSoftware Information ───────────────────┐"
         },
         {
             "type": "os",
-            "key": "   OS",
-            "keyColor": "blue"
+            "key": "  ", // Just get your distro's logo off nerdfonts.com,
+            "keyColor": "yellow"
         },
         {
             "type": "kernel",
-            "key": "    ├",
-            "keyColor": "blue"
-        },
-        {
-            "type": "packages",
-            "key": "    ├󰏖",
-            "keyColor": "blue"
-        },
-        {
-            "type": "shell",
-            "key": "    └",
-            "keyColor": "blue"
-        },
-        {
-            "type": "de",
-            "key": "   DE",
+            "key": "  ",
+            "format": "{1} {2}",
             "keyColor": "yellow"
         },
         {
             "type": "wm",
-            "key": "    ├",
+            "key": "  ",
             "keyColor": "yellow"
         },
         {
-            "type": "lm",
-            "key": "    ├󰧨",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "wmtheme",
-            "key": "    └󰉼",
+            "type": "shell",
+            "key": "  ",
             "keyColor": "yellow"
         },
         {
             "type": "custom",
-            "format": "└──────────────────────────────────────────┘"
-        },
-        "break",
-        {
-            "type": "title",
-            "color": {
-                "user": "blue",
-                "at": "blue",
-                "host": "blue"
-            },
-            "key": "  ",
-            "keyColor": "blue"
+            "format": "└──────────────────────────────────────────────────────────┘"
         },
         {
             "type": "custom",
-            "format": "┌──────────────────────────────────────────────────────────────┐"
-        },
-        {
-            "type": "host",
-            "key": "   PC",
-            "keyColor": "green"
-        },
-        {
-            "type": "cpu",
-            "key": "   ├",
-            "keyColor": "green"
-        },
-        {
-            "type": "gpu",
-            "key": "   ├󰍛",
-            "keyColor": "green"
-        },
-        {
-            "type": "disk",
-            "key": "   ├",
-            "keyColor": "green"
-        },
-        {
-            "type": "memory",
-            "key": "   ├󰑭",
-            "keyColor": "green"
-        },
-        {
-            "type": "uptime",
-            "key": "   ├󰅐",
-            "keyColor": "green"
+            "format": "┌──────────────────── \u001b[1mUptime / Age ────────────────────────┐"
         },
         {
             "type": "command",
-            "key": "   ├󱦟",
-            "keyColor": "green",
+            "key": "  OS Age ",
+            "keyColor": "yellow",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
-            "type": "display",
-            "key": "   └󰍹",
-            "keyColor": "green"
-        },      
-        {
-            "type": "custom",
-            "format": "└──────────────────────────────────────────────────────────────┘"
+            "type": "uptime",
+            "key": "  Uptime ",
+            "keyColor": "yellow"
         },
-	{
+        {
+            "type": "custom", // InformationEnd
+            "format": "└──────────────────────────────────────────────────────────┘"
+        },
+        {
             "type": "colors",
             "paddingLeft": 2,
             "symbol": "circle"
-        },
-        "break"
-        
+        }
     ]
 }
