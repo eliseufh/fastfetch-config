@@ -1,5 +1,4 @@
 # fastfetch config
 
 
-![image](https://github.com/user-attachments/assets/f0400e76-b01f-4f0e-adf3-7bd8885d2fa7)
-
+![image](https://github.com/user-attachments/assets/d768d09a-8290-4c9f-bbe5-188040c8d061)
